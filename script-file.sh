@@ -2,4 +2,4 @@
 
 echo "hello"
 
-/Applications/Tools/SonarQube/SonarScanner/bin/sonar-scanner
+/Applications/Tools/SonarQube/SonarScanner/bin/sonar-scanner -X
