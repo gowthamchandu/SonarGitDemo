@@ -4,7 +4,9 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 echo 'Preparing report...'
-                sh "./script-file.sh"
+                withSonarQubeEnv('Sonar2Server') {
+                    sh "./script-file.sh"
+                }
             }
         }
     }
