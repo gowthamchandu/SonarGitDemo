@@ -7,7 +7,7 @@ pipeline {
             }
             steps {
                 echo 'Preparing report...'
-                withSonarQubeEnv('Sonar2Server') {
+                withSonarQubeEnv('SonarServer') {
                     sh "./script-file.sh"
                 }
             }
