@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Preparing report...'
                 withSonarQubeEnv('SonarServer') {
-                    sh "mvn sonar:sonar"
+                    sh "./script-file.sh"
                 }
             }
         }
